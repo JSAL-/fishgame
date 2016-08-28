@@ -1,0 +1,29 @@
+﻿@mixin reset {
+	body{
+		padding-top: 10px;
+	}
+}
+.all_bg {
+	width: 800px;
+	height: 600px;
+	margin: 0px auto;	
+}
+#allcanvas {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	margin: 0px;
+}
+%canvas {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#canvas1 {
+	@extend %canvas;
+	z-index: 1;
+}
+#canvas2 {
+	@extend %canvas;
+	z-index: 0;
+}
